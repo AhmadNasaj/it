@@ -11,3 +11,112 @@ body {
     background-size: cover;
     background-repeat: repeat;
 }
+
+.search0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    
+    position: relative;
+    height: 30px;
+    top: 15px;
+    
+    
+}
+
+.input {
+    box-sizing: border-box;
+    border: 0;
+    width: 0px;
+    height: 30px;
+
+    transition: width 0.4s ease;
+    overflow: hidden;
+    
+    margin-left: 15px;
+    margin-top: 3px;
+    
+}
+
+.btn {
+    box-sizing: border-box;
+    margin: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3 ease;
+    cursor: pointer;
+}
+
+.btn:focus,
+.input:focus{
+    outline: none;
+}
+
+.search.active .input {
+    width: 90px;
+    display: block;
+    
+}
+
+.search.active.btn {
+    transform: translateX(198px);
+}
+.search1 {
+    
+    position: relative;
+    top: 6px;
+    left: 25px;
+    height: 10px;
+   display: flex;
+    
+}
+
+.input1 {
+    box-sizing: border-box;
+    border: 0;
+    width: 0px;
+    height: 20px;
+
+    transition: width 0.4s ease;
+    overflow: hidden;
+    color: aliceblue;
+    margin: 0px;
+    padding: 0;
+}
+
+.btn1 {
+    box-sizing: border-box;
+    margin: 0px;
+    
+    height: 15px;
+    width: 70px;
+    transition: transform 0.3 ease;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn1:focus,
+.input1:focus{
+    outline: none;
+}
+
+.search1.active .input1 {
+    width: 150px;
+    display: block;
+    
+}
+
+.search1.active.btn1 {
+    transform: translateX(218px);
+    
+}
+
+.logo img{
+    width: 180px;
+}
